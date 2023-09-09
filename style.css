@@ -65,7 +65,7 @@ body {
   }
 }
 .result_images img {
-  width: 100px;
+  width: 70px;
 }
 .user_result img {
   transform: rotate(90deg);
@@ -75,7 +75,7 @@ body {
 }
 .result {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #7d2ae8;
   margin-top: 1.5rem;
 }
@@ -108,6 +108,7 @@ body {
 }
 .option_image img {
   pointer-events: none;
+  width: 40px;
 }
 .option_image p {
   color: #7d2ae8;
@@ -128,7 +129,6 @@ body {
     height: 100vh;
     padding: 3rem;
     padding-top: 8rem;
-    /* padding-inline: 2rem; */
   }
   .reset_button {
     position: absolute;

@@ -24,7 +24,7 @@ optionImages.forEach((image, index) => {
 
     // membuat proses loading
     userResult.src = cpuResult.src = "images/rock.png";
-    result.textContent = "Wait...";
+    result.textContent = "process ...";
 
     // menghapus index class active pada opsi gambar yang tidak dipilih oleh user
     optionImages.forEach((image2, index2) => {
@@ -74,12 +74,13 @@ optionImages.forEach((image, index) => {
       // mengatur score permainan
       if (outComeValue == "User") {
         scorePlayerUi.textContent = scorePlayer += 1;
+        result.textContent = "kamu menang";
       } else if (outComeValue == "Cpu") {
         scoreCpuUi.textContent = scoreCpu += 1;
+        result.textContent = "kamu kalah";
+      } else {
+        result.textContent = "seri";
       }
-
-      // menampilkan hasil permainan
-      result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!!`;
     }, 2500);
   });
 });
